@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess</title>
+  </head>
+  <body>
+    <h1>Chess Tournmant Registration</h1>
+    <form action="/register">
+      <p>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" /><br />
+      </p>
+      <p>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" />
+      </p>
+      <p>Choose your opponent</p>
+      <div>
+        <input type="radio" id="gukesh" name="chess" value="gukesh" />
+        <label for="gukesh">Gukesh</label>
+      </div>
+      <div>
+        <input type="radio" id="vidit" name="chess" value="vidit" />
+        <label for="vidit">Vidit</label>
+      </div>
+      <div>
+        <input type="radio" id="vaishali" name="chess" value="vaishali" />
+        <label for="vaishali">Vaishali</label>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+      </div>
+
+      <button>Register</button>
+    </form>
+  </body>
+</html>
