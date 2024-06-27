@@ -20,7 +20,7 @@ personSchema.virtual('fullName').get(function () {
 personSchema.pre('save', async function () {
     this.first = 'YO';
     this.last = 'MAMA';
-    console.log("ABOUT TO SAVE!!!!")
+    console.log("ABOUT TO SAVE")
 })
 personSchema.post('save', async function () {
     console.log("JUST SAVED!!!!")

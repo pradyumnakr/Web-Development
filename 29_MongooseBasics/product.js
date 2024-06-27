@@ -62,6 +62,7 @@ productSchema.statics.fireSale = function () {
 }
 
 
+
 const Product = mongoose.model('Product', productSchema);
 
 
@@ -74,7 +75,7 @@ const findProduct = async () => {
     console.log(foundProduct)
 }
 
-// Product.fireSale().then(res => console.log(res))
+Product.fireSale().then(res => console.log(res))
 
 // findProduct();
 
