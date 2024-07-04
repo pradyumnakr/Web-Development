@@ -39,11 +39,11 @@ app.use(methodOverride('_method'))
 //     res.render('farms/show', { farm })
 // })
 
-// app.delete('/farms/:id', async (req, res) => {
-//     const farm = await Farm.findByIdAndDelete(req.params.id);
+app.delete('/farms/:id', async (req, res) => {
+    const farm = await Farm.findByIdAndDelete(req.params.id);
 
-//     res.redirect('/farms');
-// })
+    res.redirect('/farms');
+})
 
 app.get('/farms', async (req, res) => {
     const farms = await Farm.find({});
