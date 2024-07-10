@@ -41,14 +41,4 @@ router.get('/logout', (req, res) => {
     res.redirect('/campgrounds');
 })
 
-// router.get('/logout', (req, res, next) => {
-//     req.logout(function (err) {
-//         if (err) {
-//             return next(err);
-//         }
-//         req.flash('success', 'See yaa!');
-//         res.redirect('/campgrounds');
-//     });
-// });
-
 module.exports = router;
